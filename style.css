@@ -1,0 +1,139 @@
+
+/* * {
+  outline: red 1px solid;
+}
+*/
+body {
+
+	margin: 0;
+	padding: 0;
+}
+
+
+.maincontainer {
+height: 100%;
+min-height: 99vh;
+    width: 100%;
+    background-image: url('images/mainbg.png');
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 { font-family: 'Oswald', sans-serif; 
+font-weight: 300; font-size: 5rem;
+padding: 0 3rem; 
+margin-top: 0;
+}
+
+.listcontainer {
+float: right;
+width: 50%;
+height: 50%;
+text-align: center;
+padding: 1.5rem;
+}
+
+.inputcontainer {
+width: auto;
+min-width: 6rem;
+border-radius: 5px;
+border-style: dashed;
+border-color: black;
+padding: 2rem;
+margin: 0 auto;
+display: block;
+}
+
+.inputcontainer input {
+width: 50%;
+	font-family: 'Oswald', sans-serif; 
+font-weight: 300; font-size: 1.75rem;
+margin: 0;
+display: inline-block;
+}
+
+.add {
+width: 2.5em;
+height: 2.65em;
+background-image: url('images/add.png');
+float: right;
+	background-repeat: no-repeat;
+    background-size: cover; 
+display: inline-block;
+vertical-align: center;
+margin-top: .1rem;
+}
+
+
+ul {
+	height: 25rem;
+	width: 19rem;
+list-style-type: none;
+display: block;
+text-align: center;
+margin: 0 auto;
+padding: 0;
+ overflow-x: hidden; /*<---*/
+ overflow-y: scroll; /*<---*/
+}
+
+
+li {
+	border-radius: 20px;
+border-style: dashed;
+border-color: gray;
+margin: .75rem auto;
+padding: 1.3rem 1rem;
+width: 15rem;
+display: block;
+text-align: left;
+font-family: 'Oswald', sans-serif; 
+font-weight: 400; font-size: 1.33rem;
+
+}
+
+.active {
+background-color: white;
+
+}
+
+.finished
+{
+text-decoration: line-through;
+color: gray;
+}
+
+.checked {
+width: 1.9em;
+height: 1.9em;
+background-image: url('images/checked.png');
+float: left;
+	background-repeat: no-repeat;
+    background-size: cover; 
+    display: inline-block;
+margin: -.25rem 1.2rem 0 0;
+}
+
+
+.unchecked {
+width: 1.9em;
+height: 1.9em;
+background-image: url('images/unchecked.png');
+float: left;
+	background-repeat: no-repeat;
+    background-size: cover; 
+    display: inline-block;
+margin: -.25rem 1.2rem 0 0;
+}
+
+
+.drag {
+width: 1.9em;
+height: 1.9em;
+background-image: url('images/drag.png');
+float: right;
+	background-repeat: no-repeat;
+    background-size: cover; 
+    display: inline-block;
+margin: -.25rem auto;
+}
