@@ -7,13 +7,8 @@ $(document).ready(function(){
         $('.checked').show();
     })
     /*
-    .mouseup(function(){
-    	$('.ryu-cool').hide();
-        $('.ryu-throwing').hide();
-        $('.ryu-ready').show();
-    });
-*/
 
+*/
 
 
     function getItem() {

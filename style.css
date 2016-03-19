@@ -109,6 +109,7 @@ background-color: white;
 {
 text-decoration: line-through;
 color: gray;
+display: inline-block;
 }
 
 .checked {
@@ -137,7 +138,6 @@ margin: 0em 1.2rem 0 0;
 
 
 .drag {
-
 width: 1.9em;
 height: 1.9em;
 background-image: url('images/drag.png');
