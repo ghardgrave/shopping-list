@@ -66,9 +66,8 @@ margin-top: .1rem;
 
 
 ul {
-	height: 25rem;
-	width: 19rem;
-list-style-type: none;
+	height: 26rem;
+	width: 25rem;
 display: block;
 text-align: center;
 margin: 0 auto;
@@ -78,8 +77,15 @@ padding: 0;
 }
 
 
-li {
-	border-radius: 20px;
+ul #sortable { 
+list-style-type: none; 
+margin: 0; 
+padding: 0; 
+width: 90%; 
+}
+
+#sortable li { 
+	border-radius: 18px;
 border-style: dashed;
 border-color: gray;
 margin: .75rem auto;
@@ -89,8 +95,10 @@ display: block;
 text-align: left;
 font-family: 'Oswald', sans-serif; 
 font-weight: 400; font-size: 1.33rem;
-
 }
+
+
+
 
 .active {
 background-color: white;
@@ -104,30 +112,32 @@ color: gray;
 }
 
 .checked {
-width: 1.9em;
-height: 1.9em;
+display: none;
+width: 1.5em;
+height: 1.5em;
 background-image: url('images/checked.png');
 float: left;
 	background-repeat: no-repeat;
     background-size: cover; 
     display: inline-block;
-margin: -.25rem 1.2rem 0 0;
+margin: 0em 1.2rem 0 0;
 }
 
 
 .unchecked {
-width: 1.9em;
-height: 1.9em;
+width: 1.5em;
+height: 1.5em;
 background-image: url('images/unchecked.png');
 float: left;
 	background-repeat: no-repeat;
     background-size: cover; 
     display: inline-block;
-margin: -.25rem 1.2rem 0 0;
+margin: 0em 1.2rem 0 0;
 }
 
 
 .drag {
+
 width: 1.9em;
 height: 1.9em;
 background-image: url('images/drag.png');
@@ -137,3 +147,6 @@ float: right;
     display: inline-block;
 margin: -.25rem auto;
 }
+
+
+

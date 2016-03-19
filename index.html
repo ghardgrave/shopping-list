@@ -1,35 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Grocery List</title>
-<link href="style.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <title>Grocery List</title>
+  <link href="style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  });
+  </script>
+
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
+
+
+
+
 <div class="maincontainer">
 <h1>GROCERY LIST</h1>
 <div class="listcontainer">
 <div class="inputcontainer">
-<input type="text" name="firstname" value="Add new item..." readonly><div class="add"></div>
+<input id="add-items" type="text" name="add-items" autocomplete="off" placeholder="+ Add items">
 </div>
-<ul>
-<li class="finished"><div class="checked"></div>
-Item 1 <div class="drag"></div></li>
-<li class="active"><div class="unchecked"></div>Item 2 <div class="drag"></div></li>
 
-<li class="active"><div class="unchecked"></div>Item 3 <div class="drag"></div></li>
-
-<li class="active"><div class="unchecked"></div>Item 4 <div class="drag"></div></li>
-
-<li class="active"><div class="unchecked"></div>Item 5 <div class="drag"></div></li>
-
-
+ 
+<ul id="sortable">
+  <li class="ui-state-default"><div class="unchecked"><div class="checked"></div></div>Item 1 <div class="drag"></div></li>
+  <li class="ui-state-default"><div class="unchecked"></div>Item 2 <div class="drag"></div></li>
+  <li class="ui-state-default"><div class="unchecked"></div>Item 3 <div class="drag"></div></li>
+  <li class="ui-state-default"><div class="unchecked"></div>Item 4 <div class="drag"></div></li>
+  <li class="ui-state-default"><div class="unchecked"></div>Item 5 <div class="drag"></div></li>
+  <li class="ui-state-default"><div class="unchecked"></div>Item 6 <div class="drag"></div></li>
+  <li class="ui-state-default"><div class="unchecked"></div>Item 7 <div class="drag"></div></li>
 </ul>
+
+
 </div>
 
 </div>
-<script src="//code.jquery.com/jquery-latest.min.js"></script>
-<script src="app.js"></script>
-</body>
-</html>
+  <script src="app.js"></script>
+</body></html>
