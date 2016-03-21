@@ -135,14 +135,13 @@ float: left;
 }
 
 .checkbox {
-
 width: 1.5em;
 height: 1.5em;
 float: left;
 	background-repeat: no-repeat;
     background-size: cover; 
     display: inline-block;
-margin: 0em 1.2rem 0 0;
+margin: -.1em 1.2rem 0 0;
 }
 
 .hide1 {
@@ -152,18 +151,18 @@ margin: 0em 1.2rem 0 0;
 }
 
 .delete {
-    top: -5px;
+top: -5px;
 width: 1.5em;
 height: 1.5em;
 background-image: url('images/delete.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    display: inline-block; vertical-align: middle;
+background-repeat: no-repeat;
+background-size: cover; 
+display: inline-block; 
+vertical-align: middle;
       }
 
 
 .drag {
-
 width: 1.9em;
 height: 1.9em;
 background-image: url('images/drag.png');
@@ -173,10 +172,9 @@ background-image: url('images/drag.png');
 }
 
 .rightcontainer {
-        display: none;
-
+display: none;
 margin: -.25rem 0 0 0;
-  float: right;  
+float: right;  
   
 }
 
