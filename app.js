@@ -1,29 +1,25 @@
 $(document).ready(function(){
 
-
-/*
-    $('.ui-state-default').mousedown(function(){
-     	$('.unchecked').hide();
-        $('.checked').show();
+$('li').mouseenter(function(){
+        $(this).find('.rightcontainer').fadeIn(300);
     })
-    /*
 
-*/
+    .mouseleave(function() {
+        $(this).find('.rightcontainer').fadeOut(300);
 
 
-    function getItem() {
-        $('#add-items').keydown(function (enter) {
-            if (enter.keyCode == 13) {
-                postItem();
-            }
-        });
-    }
+    })
 
-    getItem();
+$("li").click(function() {
+    $(this).find('img').toggle();
+    $(this).find('p').toggleClass('active finished');
+});
 
-/*Allows user to delete items*/
+
+
 $(document).on("click", ".delete", function(){
-    $(this).closest('p').fadeOut(300);
+    $(this).closest('li').fadeOut(600);
 });
 
 });
+
