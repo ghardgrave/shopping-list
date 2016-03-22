@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=0"/> 
+
   <title>Grocery List</title>
   <link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+ 
   <script>
   $(function() {
     $( "#sortable" ).sortable();
@@ -27,80 +30,11 @@
 <h1>GROCERY LIST</h1>
 <div class="listcontainer">
 <div class="inputcontainer">
-<input id="add-items" type="text" name="add-items" autocomplete="off" placeholder="+ Add items">
+<input id="add-items" type="text" name="add-items" autocomplete="off" placeholder="Type item and hit Return..." maxlength="20">
 </div>
 
  
 <ul id="sortable">
-
-  <li>
-
-  <div class="checkbox">
-  <img src="images/unchecked.png" class="unchecked">
-  <img src="images/checked.png" class="checked">
-  </div>
-<p class="active">Item 1</p>
-
-<div class="rightcontainer">
-<div class="delete"></div>
-<div class="drag"></div></div>
-  </li>
-
-
-
-  <li>
-  <div class="checkbox">
-  <img src="images/unchecked.png" class="unchecked">
-  <img src="images/checked.png" class="checked">
-  </div>
-<p class="active">Item 2</p>
-
-<div class="rightcontainer">
-<div class="delete"></div>
-<div class="drag"></div></div>
-  </li>
-
-  <li>  <div class="checkbox">
-  <img src="images/unchecked.png" class="unchecked">
-  <img src="images/checked.png" class="checked">
-  </div>
-<p class="active">Item 3</p>
-
-<div class="rightcontainer">
-<div class="delete"></div>
-<div class="drag"></div></div></li>
-
- <li>  <div class="checkbox">
-  <img src="images/unchecked.png" class="unchecked">
-  <img src="images/checked.png" class="checked">
-  </div>
-<p class="active">Item 4</p>
-
-<div class="rightcontainer">
-<div class="delete"></div>
-<div class="drag"></div></div></li>
-
- <li>  <div class="checkbox">
-  <img src="images/unchecked.png" class="unchecked">
-  <img src="images/checked.png" class="checked">
-  </div>
-<p class="active">Item 5</p>
-
-<div class="rightcontainer">
-<div class="delete"></div>
-<div class="drag"></div></div></li>
-
- <li>  <div class="checkbox">
-  <img src="images/unchecked.png" class="unchecked">
-  <img src="images/checked.png" class="checked">
-  </div>
-<p class="active">Item 6</p>
-
-<div class="rightcontainer">
-<div class="delete"></div>
-<div class="drag"></div></div></li>
-
-
 
 </ul>
 
