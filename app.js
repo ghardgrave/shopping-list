@@ -4,24 +4,33 @@ $(document).ready(function(){
 var left = '<li><span class="unchecked"></span><p class="active"> ' 
 var right = '</p><span class="drag"></span><span class="delete"></span></li>'
 
+/*
 $('li').mouseenter(function(){
         ;
         if(down) {
-        $(this).find('.rightcontainer').show();  
+        $(this).find('.drag').show(); 
+        $(this).find('.delete').show();  
+ 
     } 
     else {
-        $(this).find('.rightcontainer').fadeIn(300);   
+        $(this).find('.drag').fadeIn(300);   
+        $(this).find('.delete').fadeIn(300);   
+
     }
     })
 
     .mouseleave(function() {
   if(down) {
-        $(this).find('.rightcontainer.').show();  
+        $(this).find('.drag').show()
+        $(this).find('.delete').show();  
+;  
     } 
     else {
-        $(this).find('.rightcontainer').fadeOut(300);   
+        $(this).find('.delete').fadeOut(300);  
+        $(this).find('.delete').fadeOut(300);   
+ 
     }    })
-
+*/
 
 $(document).on("click", "li", function() {
 
@@ -33,7 +42,9 @@ $(document).on("click", "li", function() {
 
 
 $(document).on("click", ".delete", function(){
+
     $(this).closest('li').fadeOut(600);
+
 });
 
 
@@ -42,9 +53,10 @@ function getItem() {
         $('#add-items').keydown(function (enter) {
             if (enter.keyCode == 13) {
                 postItem();
+                $(this).val("") //__WILLIAM ADDED CODE
             }
         });
-}
+};
 
 getItem();
 
@@ -53,7 +65,7 @@ function postItem() {
         var item = $('#add-items').val();
         var work = left + item + right;
         $('#sortable').prepend(work);      
-}
+};
 
 });
 

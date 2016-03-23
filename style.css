@@ -3,8 +3,8 @@
   outline: red 1px solid;
 }
 */
-body {
 
+body {
 	margin: 0;
 	padding: 0;
 }
@@ -45,7 +45,7 @@ display: block;
 }
 
 .inputcontainer input {
-width: 60 %;
+width: 75%;
 	font-family: 'Oswald', sans-serif; 
 font-weight: 300; font-size: 1.75rem;
 margin: 0;
@@ -122,18 +122,6 @@ display: inline-block;
 
 }
 
-
-/*
-
-.unchecked {
-        cursor: pointer;
-width: 35px;
-height: 35px;
-float: left;
-background-image:url('images/unchecked.png');
-
-}
-*/
 .unchecked {
     cursor: pointer;
 width: 1.5em;
@@ -168,7 +156,7 @@ background-size: cover;
 vertical-align: middle;
 position: relative;
 float: right;
-
+cursor: pointer;
       }
 
 
@@ -181,9 +169,10 @@ background-image: url('images/drag.png');
     background-size: cover; 
     display: inline-block; 
     float: right;
+    cursor: pointer;
 }
 
-
+/* responsive design below */
 
 @media only screen and (max-device-width: 680px) 
 {
@@ -212,7 +201,7 @@ display: block;
 }
 
 .inputcontainer input {
-width: 100 %;
+width: 100%;
 font-family: 'Oswald', sans-serif; 
 font-weight: 300; font-size: 6rem;
 margin: 0;
@@ -287,14 +276,11 @@ background-image: url('images/drag.png');
     vertical-align: middle;
     float: right;
 margin: -1rem -1.5rem 0 1rem;
-}
-
-
+    cursor: pointer;
 
 }
 
 
 
-
-
+}
 
